@@ -25,7 +25,7 @@ const ImageGenerator = () => {
         for (let i = 0; i < count; i++) {
             const product = {
                 name: faker.commerce.productName(),
-                category: keyword ? keyword : faker.commerce.department(), // Use the user input as the category or keyword
+                category: keyword ? keyword : faker.commerce.department(), // Use the ut as the category or keyword
                 price: faker.commerce.price(),
                 description: faker.commerce.productDescription(),
             };
