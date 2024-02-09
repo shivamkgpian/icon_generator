@@ -5,7 +5,7 @@ import axios from 'axios';
 import LoadingSpinner from './loader';
 
 const { faker } = require('@faker-js/faker');
-const API_KEY = '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'
+
 
 const ImageGenerator = () => {
     const [prompt, setPrompt] = useState('');
@@ -45,7 +45,7 @@ const ImageGenerator = () => {
                     headers: {
                         'Content-Type': 'application/json',
                         // Authorization: 'Bearer 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',
-                        'Authorization': `Bearer ${API_KEY}`,
+                        'Authorization': `Bearer  ${process.env.REACT_APP_APIKEY}`,
                         'User-Agent': 'Chrome',// Replace with your actual API key
                     },
                     body: JSON.stringify({
