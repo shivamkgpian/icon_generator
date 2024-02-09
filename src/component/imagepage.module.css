@@ -1,0 +1,65 @@
+.page {
+    background: url('../media/oranges.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.page-title {
+    font-size: 80px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+}
+
+.input {
+    padding: 6px 12px;
+    width: 300px;
+    background: rgb(31, 32, 35);
+    border: 1px solid rgb(60, 63, 68);
+    border-radius: 15px;
+    border-color: rgb(72, 73, 75);
+    border-style: solid;
+    font-size: 18px;
+    color: rgb(247, 248, 248);
+    height: 50px;
+    text-align: center;
+    appearance: none;
+    box-sizing: border-box;
+    /* transition: border 0.15s ease 0s; */
+
+    :focus {
+        outline: none;
+        box-shadow: none;
+        border-color: rgb(100, 153, 255);
+    }
+}
+
+.productList {
+    background: rgb(31, 32, 35);
+    border: 5px solid rgb(60, 63, 68);
+    border-radius: 15px;
+    border-color: rgb(72, 73, 75);
+    border-style: solid;
+    font-size: 18px;
+    color: rgb(247, 248, 248);
+    text-align: center;
+    margin: 1%;
+    padding: 2%;
+    border-color: rgb(128, 121, 121);
+}
+
+.picLogo {
+    width: 50px;
+    border-radius: 15px;
+    position: absolute;
+    right: 39%;
+    background: rgb(31, 32, 35, 0.3);
+}
