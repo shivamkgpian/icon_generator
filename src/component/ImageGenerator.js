@@ -13,7 +13,6 @@ const ImageGenerator = () => {
     const [imageUrl, setImageUrl] = useState('');
     const [loading, setLoading] = useState(false);
     const [products, setProducts] = useState([]);
-    // const API_KEY = process.env.REACT_API_KEY;
     useEffect(() => {
         if (prompt) {
             generateImage();
@@ -35,7 +34,6 @@ const ImageGenerator = () => {
         setProducts(products);
     };
 
-    // console.log(API_KEY)
     const generateImage = async () => {
         setLoading(true);
         try {
