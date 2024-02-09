@@ -5,14 +5,14 @@ import axios from 'axios';
 import LoadingSpinner from './loader';
 
 const { faker } = require('@faker-js/faker');
-const API_KEY = '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'
+
 
 const ImageGenerator = () => {
     const [prompt, setPrompt] = useState('');
     const [imageUrl, setImageUrl] = useState('');
     const [loading, setLoading] = useState(false);
     const [products, setProducts] = useState([]);
-
+    // const API_KEY = process.env.REACT_API_KEY;
     useEffect(() => {
         if (prompt) {
             generateImage();
@@ -34,7 +34,7 @@ const ImageGenerator = () => {
         setProducts(products);
     };
 
-
+    // console.log(API_KEY)
     const generateImage = async () => {
         setLoading(true);
         try {
@@ -44,8 +44,7 @@ const ImageGenerator = () => {
                     method: "POST",
                     headers: {
                         'Content-Type': 'application/json',
-                        // Authorization: 'Bearer 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',
-                        'Authorization': `Bearer ${API_KEY}`,
+                        'Authorization': `Bearer ${process.env.REACT_APP_API}`,
                         'User-Agent': 'Chrome',// Replace with your actual API key
                     },
                     body: JSON.stringify({
