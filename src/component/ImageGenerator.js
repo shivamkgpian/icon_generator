@@ -7,6 +7,7 @@ import LoadingSpinner from './loader';
 const { faker } = require('@faker-js/faker');
 
 
+
 const ImageGenerator = () => {
     const [prompt, setPrompt] = useState('');
     const [imageUrl, setImageUrl] = useState('');
