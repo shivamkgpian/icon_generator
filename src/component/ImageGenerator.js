@@ -44,7 +44,7 @@ const ImageGenerator = () => {
                     headers: {
                         'Content-Type': 'application/json',
                         'Authorization': `Bearer ${process.env.REACT_APP_API}`,
-                        'User-Agent': 'Chrome',// Replace with your actual API key
+                        'User-Agent': 'Chrome',
                     },
                     body: JSON.stringify({
                         prompt: prompt + " vector icon",
