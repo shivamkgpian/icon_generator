@@ -45,7 +45,7 @@ const ImageGenerator = () => {
                     headers: {
                         'Content-Type': 'application/json',
                         // Authorization: 'Bearer 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',
-                        'Authorization': `Bearer  ${process.env.REACT_APP_APIKEY}`,
+                        'Authorization': `Bearer  ${process.env.REACT_APP_API}`,
                         'User-Agent': 'Chrome',// Replace with your actual API key
                     },
                     body: JSON.stringify({
