@@ -1,3 +1,5 @@
+# Method
+This project use OpenAI api to generate icons and using faker.js to create fake data list of products
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
